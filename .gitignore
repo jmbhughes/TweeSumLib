@@ -1,4 +1,8 @@
+*.gsheet
+*.ipynb
+__pycache__/
 *~
 *#
 #*
 proposal/*
+data/*
