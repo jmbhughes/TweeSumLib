@@ -2,6 +2,10 @@ import json
 from dateutil import parser as dateparser
 
 class Tweet:
+    ''' A container for a processed tweet
+
+        Extracts information from the json input
+    '''
     def __init__(self, json_tweet):
         self.clean_text = json_tweet['text']
         self.raw_text = json_tweet['unmodified_text']
@@ -14,7 +18,16 @@ class Tweet:
         self.date = dateparser.parse(json_tweet['created_at'])
         self.pos = json_tweet['pos'].split()
 
+    def word_freq(self, search_word):
+        return sum([1 for word in self.clean_text.split() if search_word == word])
 class TweetCollection:
+    ''' A list type container for tweets that stores auxiliary processed information for summarization
+
+        words            --- a list of all words in the dictionary
+        collection       --- a mapping of tweet ID to the tweet datastructure 
+        word_frequencies --- a mapping from a word to the frequency of the word
+        word_count       --- number of words in the collection
+    '''
     def __init__(self, tweets=[]):
         self.collection = dict()
         self.words = []
@@ -28,6 +41,8 @@ class TweetCollection:
         return self.collection.__iter__()
 
     def add_tweet(self, tweet):
+        ''' Add a tweet to the colelction '''
+
         #Build the frequency chart for word frequency
         for word in tweet.clean_text.split():
             self.word_count += 1
@@ -39,14 +54,26 @@ class TweetCollection:
                 self.word_locations[word] = [tweet.idnum]
                 self.words.append(word)
         self.collection[tweet.idnum] = tweet
+
         
     def word_probability(self, word):
+        ''' Returns the probability of a word in the collection 
+    
+            Defined as count(word) / number of words in the collection
+        '''
         if word in self.words:
             return self.word_frequencies[word] / self.word_count
         else:
             return 0
 
     def tweet_probability(self, tweet_id, word_probabilities = None):
+        ''' Return the probability of some tweet based on the word probabilities 
+       
+            If no word_probabilities dict is provided, it uses the word_probability 
+            method. 
+
+            Tweet probability is the product of the probabilities of the words
+        '''
         tweet = self.collection[tweet_id]
         probability = 1
         if word_probabilities: #if a dict of word probabilities is given
@@ -58,10 +85,15 @@ class TweetCollection:
         return probability / len(tweet.clean_text.split())
 
     def add_from_file(self, file_path):
-        ''' Assumes that the file is formatted so that each line is a json entry'''
+        ''' Adds to collection all tweets in a jsonlist formatted file 
+
+            Assumes that the file is formatted so that each line is a json entry
+            Tweets must have all data fields specified in their constructor!
+        '''
         with open(file_path) as file:
             lines = file.readlines()
         tweets = [Tweet(json.loads(line)) for line in lines]
         for tweet in tweets:
             self.add_tweet(tweet)        
         
+B
