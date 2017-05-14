@@ -1,0 +1,166 @@
+% Journal Article
+% LaTeX Template
+% Version 1.3 (9/9/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%       PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[paper=letter, fontsize=12pt]{article}
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+
+\usepackage[draft]{fixme}
+\fxsetup{layout=footnote, marginclue}
+
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+\usepackage{blindtext}
+\usepackage{graphicx} 
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[margin=1in]{geometry}
+% \usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt, left=20mm]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+%\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+\usepackage{titlesec} % Allows customization of titles
+\usepackage{amsmath}
+% \usepackage[]{algorithm2e}
+% \usepackage{algcompatible}
+\usepackage{algorithm}
+%\usepackage{algorithmic}
+\usepackage{algpseudocode}
+
+\usepackage{todonotes}
+
+
+% \renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+%\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+
+\fancyhead[C]{James Marcus Hughes $\bullet$ Williams College $\bullet$ \today } % Custom header text
+
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+% ----------------------------------------------------------------------------------------
+%       TITLE SECTION
+%----------------------------------------------------------------------------------------
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Text Summarization: The Benefits of Argumentation Mining}} % Article title
+\author{
+\large
+{\textsc{Marcus Hughes, jmh3 }}\\[2mm]
+%\thanks{A thank you or further information}\\ % Your name
+%\normalsize \href{mailto:marco.torres.810@gmail.com}{marco.torres.810@gmail.com}\\[2mm] % Your email address
+}
+\date{}
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+\maketitle % Insert title
+\thispagestyle{fancy} % All pages have headers and footers
+
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+There are over 500 million tweets sent each day \todo{find a citation}. Many of these tweets pertain to social movements and become grouped under a topical heading, a hashtag. For example, \#LoveWins trended after the United States Supreme Court's legalization of same-sex marriage in 2015 and \#Ferguson trended after the social unrest following a police shooting in Ferguson, MO in 2014. Hashtags often come in pairs for and against a movement, e.g. \#DefundPP and \#StandWithPP in opposition and support of Planned Parenthood's funding respectively. Tweets with movement hashtags are often, but not always, accompanied with some statement explaining and/or supporting the poster's view of the movement. Previous work in argumentation mining proposed that these hashtags can be seen as a premise for an argument and that a classifier can determine which tweets support the premise with additional text and which are merely tweets with no suppor. Thus, Twitter can be used to probe public opinion and reasoning over popular issues. Due to the large volume of tweets, it is impossible to summarize the arguments without using an automated summarization technique.
+
+Many such techniques have been proposed in literature. I explore many here.
+
+\section{Previous Work}
+Summarization of multiple documents, in this case tweets, can be categorized into two main groups: extractive and abstractive. The difficult first step of summarization is identifying which parts of a document are important. Thus, extractive summarization only identifies important portions of the text and groups them together without any further processing. This clearly does not lend itself for an easily readable summary. An extractive summary will likely have redundant words. OBFor example consider three imaginary tweets as a corpus: 1. ``Bill 2017 is too expensive but it'll get the job done.'' 2. ``Bill 2017 is too expensive but it's inherently racist.'' 3. ``Bill 2017 gets the job done, no more problems ever!''. An extractive summary selecting two out of three of these tweets will repeat words, e.g. Bill 2017, too expensive, get the job done. Further as \cite{Ganesan2010} illustrates, there are intrinsic biases in this kind of summary. Any extractive summary forced to pick between these tweets will miss important caveats presented by the others.
+
+Abstractive summarization on the other hand can meld the three tweets into one summary, e.g. ``Bill 2017 will get the job done but it's expensive and racist'', to provide a more complete summary without redundant words. Abstractive summarization can range from anything as simple as exanding abbreviations to generating novel natural English summaries. More advanced abstractive summarization is much more difficult than extractive summarization, and thus the majority of work in summarization has been in extractive approaches up to this point.
+
+
+
+\section{Algorithms}
+\subsection{Random}
+Without using any additional information from the tweets, the most basic approach to extractive summarization would be to pick random tweets from the corpus and call that a summary. That does not guarantee a representative sample. All the tweets in the summary may repeat each other. I have provided an implementation of it here. 
+\subsection{SumBasic}
+
+\subsection{Hybrid TF-IDF}
+\subsection{Opinosis}
+\subsection{Mead}
+
+\section{Results}
+
+\section{Discussion and Analysis}
+
+\section{Conclusions}
+
+
+% \begin{figure}
+%   \begin{algorithm}[H]
+%     \caption{Clock Agorithm}
+%     \begin{algorithmic}[1]
+%       \While{page at front of clock queue reference bit is 1}
+%       \State set the page's reference, read, and write bits to 0
+%       \State move page to the back of the clock queue
+%       \EndWhile
+%       \State set the read, write, and resident bits of the first page in the clock queue to 0
+%       \If{the page is dirty}
+%       \State write the page to disk
+%       \State set the dirty bit to 0
+%       \EndIf
+%       \State Remove the page from the clock queue
+%       \State Return the page
+%     \end{algorithmic}
+%   \end{algorithm}
+% \end{figure}
+
+% \begin{figure}[h]
+% \begin{tabular}{ |l|l| }
+%   \hline
+%   \multicolumn{2}{|c|}{Test descriptions} \\
+%   \hline
+%   test0 & Provided example code \\
+%   test1 & Constructs 5 pages and reads from the middle\\
+%   test2 & Repeatedly extends to test faulting\\
+%   test3 & Repeatedly extending while also assigning content\\
+%   test4 & Reads, writes, and extends for nonresident pages\\
+%   test5 & Overwrites contents of a page and reads twice\\
+%   test6 & Syslogs on overlapping pages\\
+%   test7 & Similar to test1 but different number of trials\\
+%   test8 & A repeated version of test0 to catch eviction errors\\
+%   test9 & A series of syslog test, e.g. logging before assigning \\
+%   \hline
+% \end{tabular}
+% \label{table1}
+% \end{figure}
+
+\bibliographystyle{acm}
+\bibliography{reportref}
+\end{document}
+

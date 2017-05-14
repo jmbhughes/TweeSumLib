@@ -1,0 +1,136 @@
+% Journal ArticleA
+% LaTeX Template
+% Version 1.3 (9/9/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%       PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[paper=letter, fontsize=12pt]{article}
+\usepackage{multicol}
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{natbib}
+
+\usepackage[draft]{fixme}
+\fxsetup{layout=footnote, marginclue}
+
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+\usepackage{blindtext}
+\usepackage{graphicx} 
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+%\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[hmarginratio=1:1,top=20mm,columnsep=15pt, left=15mm]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+%\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+%\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+\usepackage{titlesec} % Allows customization of titles
+%\usepackage[T1]{fontenc}
+
+%\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+%\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+
+%\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+%\titleformat{\section}[block]{\large}{\thesection.\vspace{-5mm}}{1em}{}
+%\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+
+\fancyhead[C]{Williams College $\bullet$ \today } % Custom header text
+
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{titling}
+\usepackage{etoolbox}
+\posttitle{\par\end{center}}
+\setlength{\droptitle}{-10pt}
+% ----------------------------------------------------------------------------------------
+%       TITLE SECTION
+%----------------------------------------------------------------------------------------
+\title{ \vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Tweet Summarization Proposal}\vspace{-5mm}} % Article title
+\author{\textsc{Marcus Hughes, jmh3 }\vspace{-10mm}}
+\date{\vspace{-10mm}}
+
+%\makeatletter
+%\patchcmd{\@maketitle}
+%  {\addvspace{0.5\baselineskip}\egroup}
+%  {\addvspace{-10\baselineskip}\egroup}
+%  {}
+%  {}
+%\makeatother
+%----------------------------------------------------------------------------------------
+\begin{document}
+\maketitle % Insert title
+\thispagestyle{fancy} % All pages have headers and footers
+
+\begin{multicols}{2}
+\section{Overview}
+Tweets often correlate with movements and events, e.g \#LoveWins trended after the Supreme Court's legalization of same-sex marriage in the United States in 2015 or \#Ferguson trended after the social unrest following a police shooting in 2014. With a large enough sample of tweets one can theoreticaly enumerate, summarize, and understand the views of the public response to issues. One might also perform argumentation mining resulting in a large dataset of content-rich tweets, i.e. tweets with thesis and some piece of support, with evidence portions identified. However, there are still too many tweets and pieces of evidence to digest, hence the need for summarization.
+
+I intend to explore the background literature on tweet summarization. In addition, I will implement cutting-edge summarization algorithms for tweets. Finally, I hope to develop a guideline of the strengths and weaknesses of each approach. 
+
+This project will serve many purposes. First, it familiarizes me with existing work in summarization before beginning thesis work in earnest. In addition, implementing promising summarization algorithms allows for a second study during my thesis: determining whether argument mining techniques in addition to summarization provide measurable advantage in characterizing public opinion through tweets and producing complete summaries over pure summarization approaches. If an advantage is measured, I can explore how to optimize it.
+
+\section{Prior Work}
+Multi-document summarization is divided into two classes: extractive, approaches that \emph{extract} important phrases from the documents, and abstractive (or generative), approaches that \emph{generate} an organic summary beyond copy and pasting important phrases. There is extensive work in extractive summarization including many papers on summarization of tweets. Abstractive summarization is much more difficult and has not yet been as fruitful.  \textbf{SumBasic}, an algorithm developed by \cite{nv05}, is an example of an extractive approach that exploits frequency information. Its simplicity leads it to often be used as a baseline. This was later expanded into \textbf{SumFocus} resulting in better performance and more topical summaries \cite{vsbn07}. \textbf{SumBasic} and \textbf{SumFocus} are just one approach to summarization algorithms among a multitude, e.g. graph representations \cite{er04,pb07}, clustering methods \cite{kmeans}, machine learning \cite{Neto}, neural networks \cite{Padmapriya2014}, Wordnet features \cite{Pal2013}. 
+
+
+\section{Intended Approach}
+I will begin by utilizing previously mined tweets on Planned Parenthood (\#StandWithPP and \#DefundPP). However, I would like to eventually mine my own tweets (or at least understand the infrastructure utilized to retrieve these tweets.) The approach in this project is summarization with two goals: review and replication of existing approaches. If time allows (and inspiration provides), I will propose the foundations of a novel approach. 
+
+I will read a few papers (at minimum one) daily on summarization approaches and add those to a reference table throughout this project.
+
+\subsection{Timeline}
+\begin{compactitem}
+\item \textbf{4/27/17} Project beginning
+\item \textbf{4/28/17} Procure experimental dataset
+\item \textbf{4/29/17 - 4/30/17} Implement SumBasic
+\item \textbf{5/2/17} Complete a first draft of a table of previous research (clearly not exhaustive)
+\item \textbf{5/3/17} Decide what approach(es) I would like to replicate
+\item \textbf{5/4/17 - 5/9/17} Work on replicating an approach
+\item \textbf{5/9/17} Mid-way project presentation
+\item \textbf{5/9/17 - 5/15/17} Continue replicating approach(es)
+\item \textbf{5/16/17} Insure sufficient documentation and notes that any unfinished work could be resumed
+\item \textbf{5/17/17-5/18/17} Write final paper
+\item \textbf{5/19/17} Final report and code submission
+\end{compactitem}
+
+% \section{Alternative idea}
+% I had an alternative project in summarization that I am tabling for now. I was interested in summarization of articles or stories that created easier to read works for non-native readers, beginning readers, or struggling readers. Thus, there could be multiple difficulty level versions of the same article depending on the reader's skill level. I found some prior work on this but very little. I would like to potentially pursue this project either during my free time or as part of a thesis project. I think it would take longer and require more background research than presently at my disposal. I have compiled a list of relevant sources. 
+% ----------------------------------------------------------------------------------------
+\setlength{\bibsep}{0.1pt}
+
+\bibliographystyle{plain}
+{\fontsize{6}{8}\selectfont
+%\footnotesize
+  \bibliography{proposal}}
+
+
+\end{multicols}
+\end{document}
+

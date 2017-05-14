@@ -1,0 +1,1 @@
+Opinosis requires no installation because it runs as a Java jar file. See the readme in its directory for run instructions. 

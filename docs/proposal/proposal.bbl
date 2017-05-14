@@ -1,0 +1,46 @@
+\begin{thebibliography}{1}
+
+\bibitem{er04}
+Erkan and D~Radev.
+\newblock Lexrank: Graph-based lexical centrality as salience in text.
+
+\bibitem{kmeans}
+Manjula, Sarvar Begum, and D~Venkata~Swetha Ramana.
+\newblock Extracting summary from documents using k-mean clustering algorithm.
+\newblock 2(8), 2013.
+
+\bibitem{nv05}
+Aniv Nenkova and Lucy Venderwende.
+\newblock The impact of frequency on summarization.
+\newblock In {\em Microsoft Research, Redmond, Washington Tech. Rep. MSR-TR
+  2005-101}, 2005.
+
+\bibitem{Neto}
+Joel~Larocca Neto, Alex~A Freitas, and Celso A~A Kaestner.
+\newblock {Automatic Text Summarization using a Machine Learning Approach}.
+
+\bibitem{Padmapriya2014}
+G~Padmapriya and K~Duraiswamy.
+\newblock {An approach for text summarization using deep learning algorithm}.
+\newblock {\em Journal of Computer Science}, 10(1):1--9, 2014.
+
+\bibitem{Pal2013}
+Alok~Ranjan Pal, Projjwal~Kumar Maiti, and Diganta Saha.
+\newblock {An Approach To Automatic Text Summarization Using Simplified Lesk
+  Algorithm And Wordnet}.
+\newblock {\em International Journal of Control Theory and Computer Modeling
+  (IJCTCM)}, 3(45), 2013.
+
+\bibitem{pb07}
+K~Patil and P~Bradzil.
+\newblock Sumgraph: Text summarization using centrality in the pathfinder
+  network.
+\newblock 2007.
+
+\bibitem{vsbn07}
+Lucy Vanderwende, Hisami Suzuki, Chris Brockett, and Ani Nenkova.
+\newblock Beyond sumbasic: Task-focused summarization with sentence
+  simplification and lexical expansion.
+\newblock {\em Information Processing and Management}, 43(6).
+
+\end{thebibliography}

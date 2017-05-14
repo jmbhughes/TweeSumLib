@@ -20,6 +20,7 @@ class Tweet:
 
     def word_freq(self, search_word):
         return sum([1 for word in self.clean_text.split() if search_word == word])
+
 class TweetCollection:
     ''' A list type container for tweets that stores auxiliary processed information for summarization
 
@@ -28,7 +29,11 @@ class TweetCollection:
         word_frequencies --- a mapping from a word to the frequency of the word
         word_count       --- number of words in the collection
     '''
+
     def __init__(self, tweets=[]):
+        ''' Creates a blank collection 
+            If twweets is specified, a list of tweets in Tweet type those are added 
+        '''
         self.collection = dict()
         self.words = []
         self.word_frequencies = dict()
@@ -96,4 +101,5 @@ class TweetCollection:
         for tweet in tweets:
             self.add_tweet(tweet)        
         
-
+    def as_list(self):
+        return [tweet for tweetid, tweet in self.collection.items()] 

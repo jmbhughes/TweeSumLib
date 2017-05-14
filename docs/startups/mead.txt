@@ -1,0 +1,26 @@
+====================================================================================================
+INSTALLATION
+Mead is a bit more difficult and troubling to get started. I found that most versions of it failed.
+You can always try more from the website http://www.summarization.com/mead/.
+I found that only version 3.10 actually ran.
+To get it running you must first install perl.
+Then there are many library dependencies.
+For my computer, I installed all those found in /lib/mead-dependencies.
+Follow the instructions defined by each one.
+I do not have a proper installation order, trial and error will be the solution.
+There also is a problem in the LexRank C++ code in this installation.
+I have corrected it in my version, but if you redownload be sure to add
+#include <pthread.h>
+#include <sys/types.h>
+to the beginning of prmain.h in $MEADDIR/bin/feature-scripts/lexrank/src
+where in my case $MEADDIR is mead-3.10.
+This is because thread-mutexes are utilized but the library is not imported for them.
+
+Once all dependencies are built you must actually install mead again.
+This updates the directory paths for your computer.
+In the main mead directory just run perl Install.pl. If it exits with no errors you're set.
+For further explanation of mead see /lib/mead-3.10/docs/meaddoc.pdf
+====================================================================================================
+RUNNING
+
+To 

@@ -1,0 +1,87 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{ca13}
+F.~C.~T. Chua and S.~Asur, ``Automatic summarization of events from social
+  media,'' in \emph{Proceedings of the Seventh International AAAI Conference on
+  Weblogs and Social Media}, 2013.
+ \begin{quotation}\noindent A very sophisticated approach to identify topics
+  using a graph model with a decay rate. Specific to twitter as well.
+  Unfortunately, they do not provide any summary examples! \end{quotation}
+
+\bibitem{lxywl06}
+W.~Li, W.~Xu, C.~Yuan, M.~Wu, and Q.~Lu, ``Extractive summarization using
+  inter- and intra- event relevance,'' in \emph{Proceedings of the 21st
+  International Conference on Computational Linguistics and the 44th annual
+  meeting of the Association for Computational Linguistics, ACL44}, 2006, p.
+  369–376.
+ \begin{quotation}\noindent TO DOWNLOAD AND TO READ \end{quotation}
+
+\bibitem{nv05}
+A.~Nenkova and L.~Venderwende, ``The impact of frequency on summarization,'' in
+  \emph{Microsoft Research, Redmond, Washington Tech. Rep. MSR-TR 2005-101},
+  2005.
+
+
+\bibitem{skp13}
+S.~Sripada, V.~G. Kasturi, and G.~K. Parai, ``Multi-document extraction based
+  summarization,'' in \emph{CS 224N Final Project Report}, 2013.
+ \begin{quotation}\noindent They employ three different approaches to create
+  summaries. Their paper is a nice overview and includes many features to
+  consider. They discuss "stack decoder" formulations, clustering forumlations,
+  and graph based formulations. \end{quotation}
+
+\bibitem{anonbasis}
+A.~A. Submission, ``Argument mining in twitter: Recognizing premise tweets for
+  claim hashtags,'' \emph{In prep}.
+ \begin{quotation}\noindent Hashtags can be used to identify premises. They use
+  different features (e.g. discourse indicators, informativeness, sentiment,
+  tone) to identify whether tweets are premise tweets or not. These are then
+  summarized. I could provide a better summarization perchance. \end{quotation}
+
+\bibitem{vsbn07}
+L.~Vanderwende, H.~Suzuki, C.~Brockett, and A.~Nenkova, ``Beyond sumbasic:
+  Task-focused summarization with sentence simplification and lexical
+  expansion,'' \emph{Information Processing and Management}, vol.~43, no.~6.
+ \begin{quotation}\noindent TO READ \end{quotation}
+
+\bibitem{xgmr13}
+W.~Xu, R.~Grishman, A.~Meyers, and A.~Ritter, ``A preliminary study of tweet
+  summarization using information extraction,'' in \emph{Proceedings of the
+  Workshop on Language in Social Media (LASM 2013)}, June 2013, pp. 20--29.
+ \begin{quotation}\noindent Authors claim that their system produces summaries
+  that are more concise and news-worthy than SumBasic as evaluated by human
+  judges. Their graph-based appraoch uses entities, event phrases, and
+  connections between tweets. This builds off a previous work by \cite{lxywl06}
+  on news articles. They provide a wonderful table, Table 1, of previous works
+  I can use as reference. They begin by identifying events in tweets. They
+  emphasize it is important to exploit the redundancy in tweets to find
+  meaning. They map named entities and events together in a weighted graph;
+  edge weight is the number of tweets the nodes co-occur in. They then use a
+  modified version of PageRank. They use human evaluation. \end{quotation}
+
+\bibitem{yhs15}
+E.~Yulianti, S.~Huspi, and M.~Sanderson, ``Tweet-biased summarization,''
+  \emph{Journal of the Association for Information Science and Technology},
+  vol.~67, no.~6, pp. 1289--1300, 2015.
+ \begin{quotation}\noindent Describes how one must modify summarization to
+  account for tweets. What makes a good summary. \end{quotation}
+
+\end{thebibliography}
