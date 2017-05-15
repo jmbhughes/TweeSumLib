@@ -17,6 +17,7 @@ class Tweet:
         self.idnum = json_tweet['id']
         self.date = dateparser.parse(json_tweet['created_at'])
         self.pos = json_tweet['pos'].split()
+        self.length = len(self.clean_text.split())
 
     def word_freq(self, search_word):
         return sum([1 for word in self.clean_text.split() if search_word == word])

@@ -1,92 +1,35 @@
-# Tweet Summarization Library
+# TweeSumLib: Tweet Summarization Library for Python
 
-This is a collection of summarization tools collected tweets. It was prepared as part of the author's final project for CS 375 (Natural Language Processing) at Williams College. Included here are the following algorithms:
+This is a collection of summarization tools that have been somewhat optimized to run on tweets.  A python bound script is provided for easy running as well as some notes on each. Included here are the following algorithms:
 * mead
 * SumBasic
+* TF-IDF
 * Hybrid TF-IDF
+* Opinosis
+* Opinosis-T
+* Random
+* MostRecent
      
 ## Getting Started
 
 Because there are many different libraries, each must be addressed differently. In [startups](docs/startups/) you will find start up instructions for every library. Some of them require more library initialization than others.
 
-For a general overview of the kinds of summarization this system can perform please check the [final report](docs/report/report.pdf)
+For a general overview of the kinds of summarization this system can perform please check the [final report](docs/report/report.pdf).
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+Each algorithm, even if it is written originally in some other language, has a python binding. The running script can be found in [src][src/] with the appropriate ALGORITHM.py file. 
 
 ## Running the tests
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* **Marcus Hughes** - *Initial work* - [jmbhughes](https://github.com/jmbhughes)
 
 ## Acknowledgments
+* TweeSumLib of the author's final project for CS 375 (Natural Language Processing) at Williams College.
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
