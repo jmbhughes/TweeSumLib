@@ -3,44 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: report.aux
 The style file: acm.bst
 Database file #1: reportref.bib
-You've used 1 entry,
+Repeated entry---line 198 of file reportref.bib
+ : @article{Sharifi2010
+ :                     ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Sarifi2010"
+You've used 15 entries,
             2253 wiz_defined-function locations,
-            535 strings with 4142 characters,
-and the built_in function-call counts, 374 in all, are:
-= -- 36
-> -- 17
+            629 strings with 7027 characters,
+and the built_in function-call counts, 5159 in all, are:
+= -- 490
+> -- 310
 < -- 0
-+ -- 7
-- -- 6
-* -- 33
-:= -- 67
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 6
++ -- 127
+- -- 112
+* -- 440
+:= -- 885
+add.period$ -- 44
+call.type$ -- 15
+change.case$ -- 101
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 9
-empty$ -- 28
-format.name$ -- 6
-if$ -- 72
+cite$ -- 15
+duplicate$ -- 134
+empty$ -- 362
+format.name$ -- 112
+if$ -- 1015
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 2
-pop$ -- 4
+int.to.str$ -- 15
+missing$ -- 14
+newline$ -- 77
+num.names$ -- 30
+pop$ -- 82
 preamble$ -- 1
-purify$ -- 5
+purify$ -- 86
 quote$ -- 0
-skip$ -- 6
+skip$ -- 88
 stack$ -- 0
-substring$ -- 30
-swap$ -- 2
+substring$ -- 301
+swap$ -- 30
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 60
 warning$ -- 0
-while$ -- 4
-width$ -- 2
-write$ -- 12
+while$ -- 50
+width$ -- 17
+write$ -- 146
+(There was 1 error message)

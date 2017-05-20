@@ -6,7 +6,6 @@ This is a collection of summarization tools that have been somewhat optimized to
 * TF-IDF
 * Hybrid TF-IDF
 * Opinosis
-* Opinosis-T
 * Random
 * MostRecent
      
@@ -16,15 +15,10 @@ Because there are many different libraries, each must be addressed differently. 
 
 For a general overview of the kinds of summarization this system can perform please check the [final report](docs/report/report.pdf).
 
-Each algorithm, even if it is written originally in some other language, has a python binding. The running script can be found in [src][src/] with the appropriate ALGORITHM.py file. 
+Each algorithm, even if it is written originally in some other language, has a python binding. The running script can be found in [src][src/] with the appropriate ALGORITHM.py file. (The exception to this at the moment is mead. Mead must still be called from the bin directory in the mead library directory. This is because it has many more customizable features that would take more time to convey through a binding.)
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+## Example Summaries
+Results can be found in the results directory. They are subdivided into the respective corpora. Filtered summarizations only draw from tweets labeled "with-reason" indicating they have a reason for their hashtag premise. 
 
 ## Authors
 

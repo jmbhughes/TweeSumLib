@@ -32,6 +32,7 @@ if __name__ == "__main__":
 
         cmd = "cd {}bin/addons/formatting".format(MEAD_DIR)
         os.system(cmd)
+        os.chdir("{}bin/addons/formatting".format(MEAD_DIR))
         
         cmd = "perl text2cluster.pl {}data/{}/docsent/1 ~~~".format(MEAD_DIR, output_dir)
         os.system(cmd)

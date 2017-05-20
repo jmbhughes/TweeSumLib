@@ -1,5 +1,6 @@
 import json
 from dateutil import parser as dateparser
+from random import randint
 
 class Tweet:
     ''' A container for a processed tweet
@@ -10,12 +11,19 @@ class Tweet:
         self.clean_text = json_tweet['text']
         self.raw_text = json_tweet['unmodified_text']
         self.category = json_tweet['label']
-        self.is_quote = json_tweet['is_quote_status']
-        self.reply_id = json_tweet['in_reply_to_status_id']
-        self.reply_user = json_tweet['in_reply_to_user_id']
+        if 'is_quote_status' in json_tweet:
+            self.is_quote = json_tweet['is_quote_status']
+            self.reply_id = json_tweet['in_reply_to_status_id']
+            self.reply_user = json_tweet['in_reply_to_user_id']
         self.conf = [float(num) for num in json_tweet['conf'].split()]
-        self.idnum = json_tweet['id']
-        self.date = dateparser.parse(json_tweet['created_at'])
+        if 'id' in json_tweet:
+            self.idnum = json_tweet['id']
+        else:
+            self.idnum = randint(0, 10**50)
+        if 'date' in json_tweet:
+            self.date = dateparser.parse(json_tweet['date'])
+        else:
+            self.date = dateparser.parse(json_tweet['created_at'])
         self.pos = json_tweet['pos'].split()
         self.length = len(self.clean_text.split())
 

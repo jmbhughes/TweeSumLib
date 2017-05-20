@@ -1,10 +1,19 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Previous Work}{}% 2
 \BOOKMARK [1][-]{section.3}{Algorithms}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{SumBasic}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Hybrid TF-IDF}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.3}{Opinosis}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.4}{Mead}{section.3}% 7
-\BOOKMARK [1][-]{section.4}{Results}{}% 8
-\BOOKMARK [1][-]{section.5}{Discussion and Analysis}{}% 9
-\BOOKMARK [1][-]{section.6}{Conclusions}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Random}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{MostRecent}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{SumBasic}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Hybrid TF-IDF}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{TF-IDF}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.6}{Opinosis}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.7}{Mead}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Experiment}{}% 11
+\BOOKMARK [1][-]{section.5}{Results}{}% 12
+\BOOKMARK [1][-]{section.6}{Discussion and Analysis}{}% 13
+\BOOKMARK [2][-]{subsection.6.1}{Filtering by arguments helps disproportionately}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.2}{Problems with Opinosis}{section.6}% 15
+\BOOKMARK [1][-]{section.7}{Novel Summarization}{}% 16
+\BOOKMARK [2][-]{subsection.7.1}{N-gram mining}{section.7}% 17
+\BOOKMARK [2][-]{subsection.7.2}{The Value of Graphs and Troubles of Twitter}{section.7}% 18
+\BOOKMARK [1][-]{section.8}{Conclusions}{}% 19

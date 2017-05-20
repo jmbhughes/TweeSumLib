@@ -45,6 +45,12 @@
     "fancyhdr")
    (TeX-add-symbols
     '("horrule" 1))
+   (LaTeX-add-labels
+    "fig:opno"
+    "fig:opyes"
+    "fig:sumyes"
+    "fig:sumno"
+    "subsec:opproblems")
    (LaTeX-add-bibliographies
     "reportref"))
  :latex)

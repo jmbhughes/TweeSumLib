@@ -1,4 +1,0 @@
-python ./src/Random.py ./data/defundpp.txt.pos ./results/defundpp/Random.summ 10
-python ./src/MostRecent.py ./data/defundpp.txt.pos ./results/defundpp/MostRecent.summ 10
-python ./src/SumBasic.py ./data/defundpp.txt.pos ./results/defundpp/SumBasic.summ 10
-python ./src/Opinosis.py ./data/defundpp.txt.pos ./results/Opinosis.summ 10

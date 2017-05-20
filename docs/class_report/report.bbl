@@ -1,4 +1,23 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Duan2012}
+{\sc Duan, Y., Chen, Z., Wei, F., Zhou, M., and Shum, H.-Y.}
+\newblock {Twitter topic summarization by ranking tweets using social influence
+  and content quality}.
+\newblock {\em Proceedings of the 24th {\ldots} 4}, 96 (2012), 763--780.
+
+\bibitem{Edwards2016}
+{\sc Edwards, J.}
+\newblock Leaked twitter api data shows the number of tweets is in serious
+  decline.
+\newblock {\em Business Insider}, Feb 2 (2016).
+
+\bibitem{Erkan2004}
+{\sc Erkan, G., and Radev, D.~R.}
+\newblock {LexRank: Graph-based Lexical Centrality as Salience in Text
+  Summarization}.
+\newblock {\em Journal of Artificial Intelligence Research 22\/} (2004),
+  457--479.
 
 \bibitem{Ganesan2010}
 {\sc Ganesan, K., Zhai, C., and Han, J.}
@@ -6,5 +25,74 @@
   Highly Redundant Opinions}.
 \newblock {\em Proceedings of the 23rd International Conference on
   Computational Linguistics}, August (2010), 340--348.
+
+\bibitem{Gimpel2011}
+{\sc Gimpel, K., Schneider, N., O'Connor, B., and Das, D.}
+\newblock {Part-of-speech tagging for twitter: Annotation, features, and
+  experiments}.
+\newblock {\em Proceedings of the 49th\/} (2011).
+
+\bibitem{He2016}
+{\sc He, R., Liu, Y., Yu, G., Tang, J., Hu, Q., and Dang, J.}
+\newblock {Twitter summarization with social-temporal context}, 2016.
+
+\bibitem{Inouye2011}
+{\sc Inouye, D., and Kalita+, J.~K.}
+\newblock {Comparing Twitter Summarization Algorithms for Multiple Post
+  Summaries}.
+\newblock {\em 2011 IEEE Third Int'l Conference on Privacy, Security, Risk and
+  Trust and 2011 IEEE Third Int'l Conference on Social Computing\/} (2011),
+  298--306.
+
+\bibitem{Nenkova2004}
+{\sc Nenkova, A., and Passonneau, R.}
+\newblock {Evaluating content selection in summarization: The pyramid method}.
+\newblock {\em Proceedings of HLT-NAACL 2004\/} (2004), 145--152.
+
+\bibitem{Nenkova2005}
+{\sc Nenkova, A., and Vanderwende, L.}
+\newblock {The impact of frequency on summarization}.
+\newblock {\em Microsoft Research Redmond Washington Tech Rep MSRTR2005101\/}
+  (2005).
+
+\bibitem{Acl2016}
+{\sc Park, J.}
+\newblock {Argument Mining in Twitter : Recognizing Premise Tweets for Claim
+  Hashtags}.
+\newblock {\em Unpublished, private correspondence\/} (2016), 1--9.
+
+\bibitem{Radev2004}
+{\sc Radev, D., Allison, T., Blair-Goldensohn, S., Blitzer, J., {\c{C}}elebi,
+  A., Dimitrov, S., Drabek, E., Hakim, A., Lam, W., Liu, D., Otterbacher, J.,
+  Qi, H., Saggion, H., Teufel, S., Topper, M., Winkel, A., and Zhang, Z.}
+\newblock {{\{}MEAD{\}} --- {\{}A{\}} platform for multidocument multilingual
+  text summarization}.
+\newblock {\em Conference on Language Resources and Evaluation (LREC)\/}
+  (2004), 699--702.
+
+\bibitem{Sharifi2010}
+{\sc Sharifi, B., Hutton, M.-A., and Kalita, J.~K.}
+\newblock {Experiments in Microblog Summarization}.
+\newblock {\em Social Computing (SocialCom), 2010 IEEE Second International
+  Conference on\/} (2010).
+
+\bibitem{Wang2016}
+{\sc Wang, L., and Ling, W.}
+\newblock {Neural Network-Based Abstract Generation for Opinions and
+  Arguments}.
+\newblock {\em Proceedings of the 2016 Conference of the North American Chapter
+  of the Association for Computational Linguistics: Human Language
+  Technologies\/} (2016), 47--57.
+
+\bibitem{Xu2013}
+{\sc Xu, W., Grishman, R., Meyers, A., and Ritter, A.}
+\newblock {A Preliminary Study of Tweet Summarization using Information
+  Extraction}.
+\newblock {\em Naacl 2013}, Lasm (2013), 20--29.
+
+\bibitem{Yang2012}
+{\sc Yang, X., and Ruan, Y.}
+\newblock {A Framework for Summarizing and Analyzing Twitter Feeds}.
+\newblock {\em Kdd12}, Figure 1 (2012), 370--378.
 
 \end{thebibliography}
